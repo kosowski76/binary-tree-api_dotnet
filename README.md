@@ -31,7 +31,7 @@
   - [x] Implementacja rozwiązania
 
 Request POST:
-    http://{{localhost}}:{{port}}/api/binarynodestr/negate
+    http://13.95.214.25:8080/api/binarynodestr/negate
 
 {
   "value": "A",
@@ -56,7 +56,7 @@ Response:
 
 
   Request POST:
-    http://{{localhost}}:{{port}}/api/binarynodeint/negate
+    http://13.95.214.25:8080/api/binarynodeint/negate
 
   {
     "value": 42, "left": { "value": 40, "left": null, "right": null},
