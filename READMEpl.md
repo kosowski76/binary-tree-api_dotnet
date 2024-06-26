@@ -10,28 +10,28 @@
  ## 01. Setup
 ### 01.01. Init setutp
 
-### 02. Understanding and implementing trees
+### 02. Zrozumienie i implementacja drzew
 
-  02. [x] Basic tree implementation
+  02. [x] Podstawowa implementacja drzewa
 
-Task:
+  Zadanie:
 
- - Create a node for a hierarchical structure,
- there is one root for the organization.
- A node is not limited by degree and can have many children.
+  - Utworzyć węzeł dla hierarchicznej struktury,
+    dla organizacji istnieje jeden korzeń.
+    Węzeł nie jest ograniczony stopniem, może posiadać wiele dzieci.
+  
+  - Zbudować strukturę drzewiastą z definicją korzenia oraz 
+    z metodą umożliwiającą przechodzenie przez całe drzewo.
 
- - Build a tree structure with the definition of the root and
- with a method that allows traversal of the entire tree.
-
- - The website should be able to process the input data
- in JSON format representing a binary tree
- and return the processed tree in JSON format.
+  - Serwis powinien być w stanie przetworzyć dane wejściowe 
+    w formacie JSON reprezentujące drzewo binarne
+    i zwrócić przetworzone drzewo w formacie JSON.
 
 
- - [x] Implementation of the solution
+  - [x] Implementacja rozwiązania
 
 Request POST:
-   /api/binarynodestr/negate
+    http://13.95.214.25:8080/api/binarynodestr/negate
 
 {
   "value": "A",
@@ -56,11 +56,12 @@ Response:
 
 
   Request POST:
-    /api/binarynodeint/negate
+    http://13.95.214.25:8080/api/binarynodeint/negate
 
   {
     "value": 42, "left": { "value": 40, "left": null, "right": null},
      "right": { "value": 47, "left": { "value": 45, "left": null, "right": null}, "right": null}
   }
 
-- [x] Implementation using Queue
+  - [x] Implementacja przy pomocy kolejki Queue
+
